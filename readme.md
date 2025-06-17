@@ -10,7 +10,7 @@ docker compose down
 
 # Vào step 2
 ```
-cd ../step1
+cd ../step2
 ```
 Chỉnh sửa file ***.env*** là domain đã đăng ký
 
