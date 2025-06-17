@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  nginx-cert:
+    image: nginx:alpine
+    container_name: certbot_nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ../step2/certbot/conf:/etc/letsencrypt
+      - ../step2/certbot/www:/var/www/certbot/www
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+    env_file:
+      - .env
+
+  certbot:
+    image: certbot/certbot
+    container_name: certbot_runner
+    restart: "no"
+    depends_on:
+      - nginx-cert
+    volumes:
+      - ../step2/certbot/conf:/etc/letsencrypt
+      - ../step2/certbot/www:/var/www/certbot/www
+    env_file:
+      - .env
+    # <-- change this block:
+    command:
+      - certonly
+      - --webroot
+      - --webroot-path=/var/www/certbot/www
+      - --email=${EMAIL}
+      - --agree-tos
+      - --no-eff-email
+      - -d
+      - ${DOMAIN}
