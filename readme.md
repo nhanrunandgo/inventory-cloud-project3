@@ -1,7 +1,9 @@
 # Lấy chứng chỉ Let's encrypt cho 1 domain bất kỳ
 ```
 cd step1
+```
 Chỉnh sửa trong .env
+```
 docker compose up -d nginx-cert
 docker compose run --rm certbot
 docker compose down
