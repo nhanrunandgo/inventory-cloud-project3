@@ -1,13 +1,9 @@
-version: '3.8'
+version: "3.8"
 
 services:
   frontend:
-    image: nginx:alpine
-    volumes:
-      - ./frontend/default.conf:/etc/nginx/default.conf:ro
-      - ./frontend/static:/usr/share/nginx/html:ro
-    # ports: # Các service dùng port nội bộ nên không cần map
-    #   - "8080:80"
+    build: ./frontend
+    image: custom-nginx-frontend
     networks:
       - webnet
 
@@ -22,16 +18,15 @@ services:
       - webnet
 
   gateway:
-    image: nginx:alpine
+    build:
+      context: .
+      dockerfile: Dockerfile.gateway
+    image: nginx_gateway_ssl
     container_name: nginx_reverse_proxy
     restart: always
     ports:
       - "80:80"
       - "443:443"
-    volumes:
-      - ./gateway/default.conf.template:/etc/nginx/templates/default.conf.template:ro
-      - ./certbot/www:/var/www/certbot/www
-      - ./certbot/conf:/etc/letsencrypt
     environment:
       - DOMAIN=${DOMAIN}
     depends_on:
