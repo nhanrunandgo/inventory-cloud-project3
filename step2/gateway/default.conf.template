@@ -8,7 +8,7 @@ server {
 # HTTPS server
 server {
     listen 443 ssl;
-    server_name ${DOMAIN};
+    server_name _;
 
     # SSL certs từ certbot
     ssl_certificate     /etc/letsencrypt/live/${DOMAIN}/fullchain.pem;
