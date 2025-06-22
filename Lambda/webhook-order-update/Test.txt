@@ -1,0 +1,239 @@
+{
+  "headers": {
+    "X-WC-Webhook-Signature": "iWL5m9DCgXw/KeEU9GvwBZOe617MeIdfUGGPRItGOqM="
+  },
+  "body": {
+    "id": 95,
+    "parent_id": 0,
+    "status": "processing",
+    "currency": "VND",
+    "version": "9.8.5",
+    "prices_include_tax": false,
+    "date_created": "2025-06-14T15:37:32",
+    "date_modified": "2025-06-14T15:37:54",
+    "discount_total": "0",
+    "discount_tax": "0",
+    "shipping_total": "0",
+    "shipping_tax": "0",
+    "cart_tax": "0",
+    "total": "14390000",
+    "total_tax": "0",
+    "customer_id": 2,
+    "order_key": "wc_order_i8Y9Z5U4flDmH",
+    "billing": {
+      "first_name": "Nguyễn Đình",
+      "last_name": "Nhân",
+      "company": "",
+      "address_1": "HCM",
+      "address_2": "",
+      "city": "HCM",
+      "state": "",
+      "postcode": "",
+      "country": "VN",
+      "email": "nhanrunandgo@gmail.com",
+      "phone": ""
+    },
+    "shipping": {
+      "first_name": "Nguyễn Đình",
+      "last_name": "Nhân",
+      "company": "",
+      "address_1": "HCM",
+      "address_2": "",
+      "city": "HCM",
+      "state": "",
+      "postcode": "",
+      "country": "VN",
+      "phone": ""
+    },
+    "payment_method": "cod",
+    "payment_method_title": "Cash on delivery",
+    "transaction_id": "",
+    "customer_ip_address": "171.235.163.49",
+    "customer_user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0",
+    "created_via": "store-api",
+    "customer_note": "",
+    "date_completed": null,
+    "date_paid": null,
+    "cart_hash": "868f5ad7d5ac499dc066fee2f684c360",
+    "number": "95",
+    "meta_data": [
+      {
+        "id": 50,
+        "key": "_coupons_hash",
+        "value": "d751713988987e9331980363e24189ce"
+      },
+      {
+        "id": 51,
+        "key": "_fees_hash",
+        "value": "d751713988987e9331980363e24189ce"
+      },
+      {
+        "id": 49,
+        "key": "_shipping_hash",
+        "value": "9d4568c009d203ab10e33ea9953a0264"
+      },
+      {
+        "id": 52,
+        "key": "_taxes_hash",
+        "value": "fce788ca3b16abebf49baaf53a9a3afa"
+      },
+      {
+        "id": 64,
+        "key": "_wc_order_attribution_device_type",
+        "value": "Desktop"
+      },
+      {
+        "id": 57,
+        "key": "_wc_order_attribution_referrer",
+        "value": "https://lb.woo.caotienminh.software/"
+      },
+      {
+        "id": 62,
+        "key": "_wc_order_attribution_session_count",
+        "value": "2"
+      },
+      {
+        "id": 59,
+        "key": "_wc_order_attribution_session_entry",
+        "value": "https://lb.woo.caotienminh.software/"
+      },
+      {
+        "id": 61,
+        "key": "_wc_order_attribution_session_pages",
+        "value": "17"
+      },
+      {
+        "id": 60,
+        "key": "_wc_order_attribution_session_start_time",
+        "value": "2025-06-14 13:43:50"
+      },
+      {
+        "id": 56,
+        "key": "_wc_order_attribution_source_type",
+        "value": "typein"
+      },
+      {
+        "id": 63,
+        "key": "_wc_order_attribution_user_agent",
+        "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0"
+      },
+      {
+        "id": 58,
+        "key": "_wc_order_attribution_utm_source",
+        "value": "(direct)"
+      },
+      {
+        "id": 53,
+        "key": "is_vat_exempt",
+        "value": "no"
+      }
+    ],
+    "line_items": [
+      {
+        "id": 77,
+        "name": "Máy đọc sách Boox Note Air 4 C",
+        "product_id": 86,
+        "variation_id": 0,
+        "quantity": 1,
+        "tax_class": "",
+        "subtotal": "14390000",
+        "subtotal_tax": "0",
+        "total": "14390000",
+        "total_tax": "0",
+        "taxes": [
+          {
+            "id": 1,
+            "total": "0",
+            "subtotal": "0"
+          }
+        ],
+        "meta_data": [],
+        "sku": "2",
+        "price": 14390000,
+        "image": {
+          "id": "87",
+          "src": "https://cloud-instance-bucket.s3.amazonaws.com/wp-content/uploads/2025/06/14030236/bNA4C.webp"
+        },
+        "parent_name": null
+      }
+    ],
+    "tax_lines": [
+      {
+        "id": 81,
+        "rate_code": "TAX-1",
+        "rate_id": 1,
+        "label": "Tax",
+        "compound": false,
+        "tax_total": "0",
+        "shipping_tax_total": "0",
+        "rate_percent": 0,
+        "meta_data": []
+      }
+    ],
+    "shipping_lines": [
+      {
+        "id": 82,
+        "method_title": "Free shipping",
+        "method_id": "free_shipping",
+        "instance_id": "1",
+        "total": "0",
+        "total_tax": "0",
+        "taxes": [],
+        "tax_status": "taxable",
+        "meta_data": [
+          {
+            "id": 712,
+            "key": "Items",
+            "value": "Máy đọc sách Boox Note Air 4 C &times; 1",
+            "display_key": "Items",
+            "display_value": "Máy đọc sách Boox Note Air 4 C &times; 1"
+          }
+        ]
+      }
+    ],
+    "fee_lines": [],
+    "coupon_lines": [],
+    "refunds": [],
+    "payment_url": "https://lb.woo.caotienminh.software/?page_id=9&order-pay=95&pay_for_order=true&key=wc_order_i8Y9Z5U4flDmH",
+    "is_editable": false,
+    "needs_payment": false,
+    "needs_processing": true,
+    "date_created_gmt": "2025-06-14T15:37:32",
+    "date_modified_gmt": "2025-06-14T15:37:54",
+    "date_completed_gmt": null,
+    "date_paid_gmt": null,
+    "currency_symbol": "₫",
+    "_links": {
+      "self": [
+        {
+          "href": "https://lb.woo.caotienminh.software/index.php?rest_route=/wc/v3/orders/95",
+          "targetHints": {
+            "allow": [
+              "GET",
+              "POST",
+              "PUT",
+              "PATCH",
+              "DELETE"
+            ]
+          }
+        }
+      ],
+      "collection": [
+        {
+          "href": "https://lb.woo.caotienminh.software/index.php?rest_route=/wc/v3/orders"
+        }
+      ],
+      "email_templates": [
+        {
+          "embeddable": true,
+          "href": "https://lb.woo.caotienminh.software/index.php?rest_route=/wc/v3/orders/95/actions/email_templates"
+        }
+      ],
+      "customer": [
+        {
+          "href": "https://lb.woo.caotienminh.software/index.php?rest_route=/wc/v3/customers/2"
+        }
+      ]
+    }
+  }
+}

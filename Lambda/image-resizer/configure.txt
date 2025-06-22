@@ -1,0 +1,6 @@
+General: Timeout 20s
+Permission/Role:
+- AllowS3ReadWritePolicy
+- AmazonSNSFullAccess
+- Basic Lambda(Auto)
+Trigger S3 (Config inside S3)

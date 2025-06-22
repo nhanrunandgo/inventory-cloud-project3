@@ -1,0 +1,6 @@
+Permission/Role:
+- AllowPublishPolicy
+- Basic Lambda(Auto)
+Environment variables
+SNS_TOPIC_ARN		arn:aws:sns:us-east-1:992382421164:Order-update-notification
+WC_SECRET		woocommerce
